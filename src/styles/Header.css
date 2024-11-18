@@ -1,0 +1,46 @@
+/* styles.css */
+.theHeader {
+  background-color: #ffffff; /* Light background */
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theHeader ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;   
+}
+
+.theHeader li {
+  position: relative;
+  cursor: pointer;
+}
+
+.theHeader a {
+  text-decoration: none;  
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.theHeader a:hover {
+  color: #867070; /* Change text color on hover */
+}
+
+.theHeader a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background-color: #867070;
+  transition: width 0.3s ease;
+}
+
+.theHeader a:hover::after {
+  width: 100%; 
+}
